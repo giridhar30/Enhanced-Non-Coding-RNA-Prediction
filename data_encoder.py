@@ -1,5 +1,5 @@
 import numpy as np
-from constants import code_map
+from constants import CODE_MAP
 
 # encoding the given sequence
 def encode_base(line):
@@ -7,8 +7,8 @@ def encode_base(line):
 
     for i in range(500):
         if(i < len(line)-1):
-            encoded_list.append(code_map.get(line[i].upper(), code_map['N']))
+            encoded_list.append(CODE_MAP.get(line[i].upper(), CODE_MAP['N']))
         else:
-            encoded_list.append(code_map['N'])
+            encoded_list.append(CODE_MAP['N'])
 
     return np.array(encoded_list)
