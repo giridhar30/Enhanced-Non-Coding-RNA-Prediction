@@ -33,6 +33,10 @@ def main():
         print('\n\033[31menter the sequence to be classified:')
         sequence = input()
         print('\033[0m')
+        if not sequence:
+            print('\033[31mempty sequence not allowed\033[0m')
+            import sys
+            sys.exit()
         family = predict_family(sequence)
         print('\nThe given RNA Sequence belongs to: \n\033[31m' + family + '\033[0m family\n')
 
