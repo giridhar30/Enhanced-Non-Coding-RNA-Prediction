@@ -13,8 +13,8 @@ from constants import INPUT_DIM, TIME_STEPS, BATCH_SIZE, EPOCHS, METRICS
 
 def train_model(model_name):
     # processing and encoding the data
-    # process_data(TRAIN_FILE_NAME)
-    # process_data(TEST_FILE_NAME)
+    process_data(TRAIN_FILE_NAME)
+    process_data(TEST_FILE_NAME)
 
     # reading train and test set
     x_train, y_train = read_dataset(TRAIN_FILE_NAME)
