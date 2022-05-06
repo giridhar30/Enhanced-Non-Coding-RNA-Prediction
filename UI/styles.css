@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*
+{
+  font-family: 'Koulen', cursive;
+}
+
+.navbar{
+  background-color: #cc0000;
+  padding: 1%;
+  border-radius: 5px;
+}
+.navbar-brand
+{
+  margin: 5px;
+  padding: 5px;
+}
+form
+{
+  background-color: #ffe6e6;
+  border-radius: 5px;
+}
+input{
+  padding: 1%;
+  border: 1px solid #cfe1e3;
+  border-radius: 5px;
+}
+#submit
+{
+  background-color: #cc0000;
+}
