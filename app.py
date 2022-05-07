@@ -1,8 +1,15 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from prediction import predict_family
-app = Flask(__name__)
+from flask_cors import cross_origin
 
-@app.route('/', methods = ['POST', 'GET'])
+app = Flask(__name__, template_folder='UI')
+
+@app.route('/', methods = ['GET'])
+def index():
+   return render_template('index.html')
+
+@app.route('/', methods = ['POST'])
+@cross_origin()
 def rna():
     if request.method == 'POST':
         data = request.json
